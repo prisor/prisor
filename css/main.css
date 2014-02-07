@@ -1,0 +1,217 @@
+/* CSS Document */
+/*Estilo usado para centrar cosas*/
+.centrar{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	display:block;
+
+}
+/*Estilo para todo el body*/
+body{
+	font-family:'Roboto', sans-serif; /*Fuente*/
+	background:rgb(242,242,242); /*Color de fondo gris*/
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+p{
+margin-top:0;
+margin-bottom:0;
+}
+/*Estilo de la barra de navegación*/
+#barraNavegacion{
+	background:#FFF; /*Fondo blanco*/
+	position:fixed; /*Permanece fija arriba*/
+	top:0;
+	right:0;
+	left:0;
+	height:100px;
+	width:100%;
+	z-index:1;
+}
+
+/*Estilo del logo*/
+#logo{
+	float:left;
+}
+/*Estilo del nombre-A la derecha del logo*/
+#nombrePrisor{
+	padding-top:50px;
+	/*border:#9C0 solid 5px;*/
+	float:left;
+	/*border:5px solid #000;*/
+	display:inline;
+	
+}
+/*Enlaces de la barra superior*/
+#enlaces{
+	/*border:#3C9 solid medium;*/
+	float:right;
+	margin-top:50px;
+	margin-right:50px;
+
+}
+#enlaces a{
+	color:#000;
+}
+#enlaces a:hover{
+	border-bottom:#F93 5px solid;
+}
+#barraNavegacion p{
+	/*border:5px solid #000;*/
+	display:inline;
+}
+#enlaces li{
+
+	display:inline;
+	padding-left:10px;
+	padding-right:10px;
+}
+#container{
+	margin-top:150px;
+	/*border:#3FF solid 5px;*/
+	position:relative;
+	overflow:hidden;
+}
+#barraInferior{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	left:0;
+	right:0;
+	background:#000;
+	color:#FFF;
+}
+
+#CajaRespuestas{
+	margin: 0 auto;
+	display:block;
+	/*border:#0F6 solid 5px;*/
+	overflow:hidden;
+	width:420px;
+
+	
+}
+.respuesta{
+	position:relative;
+	float:left;
+	display:inline;
+	width:200px;
+	height:300px;
+	/*border:#03C solid 5px;*/
+
+}
+
+.respuesta img{
+	position:relative;
+	top:0;
+	margin: 0 auto;
+	display:block;
+	/*border:#03C solid 5px;*/
+}
+.respuesta p{
+		text-align:center;
+		margin: 0 auto;
+		left:0;
+		right:0;
+	position:absolute;
+	bottom:0;
+	/*border:#03C solid 5px;*/
+}
+
+#botones{
+	width:100%;
+	padding-bottom:50px;
+}
+#botones *{
+	float:right;
+	padding-right:20px;
+}
+
+
+
+
+
+.boton{
+     /*Color del texto: Blanco*/
+     color: #fff;
+     font-size: 50px;
+     /*Aplicamos padding a los botones*/
+     /*Padding top-bottom: 20px*/
+     /*Padding left-right: 30px*/
+     padding: 20px 30px;
+     border-radius: 80px; /*Bordes redondos*/
+     /*Definimos una transición de 0.3 s cuando cambie cualquier propiedad (all) */
+     transition: 0.30s all;
+     -webkit-transition: 0.30s all; /*Safari*/
+     position: relative;
+     bottom: 0;
+     background: #F40; /*Definimos el color de fondo del boton*/
+     box-shadow: 0px 5px #C30; /*Definimos la sombra del boton*/
+     margin-top:40px;
+ }
+  /*Propiedades cuando el boton está activo*/
+ .boton:active{
+     bottom: -5px; /*Modificamos la posición del botón para que de la sensación de presionado*/
+     box-shadow:0 0 #000, inset 0 0 5px #000; /*Definimos una sombra interior (inset de 5px)*/
+     background: #F80;  
+      
+ }
+ .botonMediano{
+	 /*Color del texto: Blanco*/
+     color: #fff;
+     font-size: 30px;
+     /*Aplicamos padding a los botones*/
+     /*Padding top-bottom: 20px*/
+     /*Padding left-right: 30px*/
+     padding: 10px 20px;
+     border-radius: 80px; /*Bordes redondos*/
+     /*Definimos una transición de 0.3 s cuando cambie cualquier propiedad (all) */
+     transition: 0.30s all;
+     -webkit-transition: 0.30s all; /*Safari*/
+     position: relative;
+     bottom: 0;
+     background: #F40; /*Definimos el color de fondo del boton*/
+     box-shadow: 0px 5px #C30; /*Definimos la sombra del boton*/
+     margin-top:40px;
+ }
+  /*Propiedades cuando el boton está activo*/
+ .botonMediano:active{
+     bottom: -5px; /*Modificamos la posición del botón para que de la sensación de presionado*/
+     box-shadow:0 0 #000, inset 0 0 5px #000; /*Definimos una sombra interior (inset de 5px)*/
+     background: #F80;  
+      
+ }
+  
+
+ 
+ img.flip {
+    /*Definimos que realize una transición de 2.35s al cambiar el valor de la propiedad CSS transform*/
+    -webkit-transition: 2.35s -webkit-transform; /*Safari*/
+    transition: 2.35s transform;
+    /*Propiedades para mostrar la imagen centrada*/
+    margin:auto;
+    display:block;
+     
+  }
+img.flip:hover {
+    /*Damos la vuelta a la imagen*/
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    /*Definimos que realize una transición de 2.35s al cambiar el valor de la propiedad CSS transform*/
+    /*Definimos otra vez transition para que cuando dejemos de estar por encima de la imagen
+     *vuelva a su forma original gradualmente*/
+    -webkit-transition: 2.35s -webkit-transform; /*Safari*/
+    transition: 2.35s transform;   
+}

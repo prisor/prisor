@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$(".iframe").fancybox({
+				'width'				: '85%',
+				'height'			: '85%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$(".video").click(function() {
+				$.fancybox({
+						'padding'       : 0,
+						'autoScale'     : false,
+						'transitionIn'  : 'none',
+						'transitionOut' : 'none',
+						'title'         : this.title,
+						'width'     : 680,
+						'height'        : 495,
+						'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'          : 'swf',
+						'swf'           : {
+							 'wmode'        : 'transparent',
+							'allowfullscreen'   : 'true'
+						}
+					});
+			
+				return false;
+			});			
+
+		});
+		
+	</script>
+<title>Better Privacy</title>
+</head>
+
+<body>
+	<div id="barraNavegacion">
+		 
+        <div id="logo"> <a href="../inicio.html"><img  src="../images/prisor.png" width="100" height="95" alt="logo PRISOR" /></a>
+        </div>
+        <div id="nombrePrisor">
+            <p>PRISOR</p>
+            <br />
+            <p>Privacy and Security advisOR</p>
+        </div>
+        <div id="enlaces">
+            <ul>
+                <li><a href="../inicio.html">INICIO</a></li>
+                <li><a href="../equipo.html">EQUIPO</a></li>
+                <li><a href="../contacto.html">CONTACTO</a></li>
+            </ul>
+      </div>
+    </div><!--Fin del div de barra de Navegación-->
+    <div id="container">
+   	  <p style=" font-size:60px;" class="centrar">Instala Better-Privacy</p>
+      <img src="https://addons.cdn.mozilla.net/img/uploads/previews/thumbs/18/18819.png?modified=1331247702
+" alt="logo PRISOR" width="150" height="150" class="centrar" />
+<br /><br />
+      <p class="centrar">Muchas empresas espían tus hábitos de navegación mediante las cookies de tu navegador. Puedes configurar tu navegador para que bloquee algunas de estas cookies, pero existen un tipo de cookies, llamadas cookies de Flash y utilizadas por sitios como Youtube o eBay, que son muy difíciles de detectar por los navegadores. BetterPrivacy permite bloquear y controlar estas cookies Flash.
+</p>
+        
+      <div id="botones">
+      		<div>
+    		<a href="../privacidad-facebook.html" class="botonMediano">Siguiente paso</a>
+		</div>
+        <div>
+    		<a class="botonMediano" href="https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi?src=dp-btn-primary">Instalar</a>
+		</div>
+         <div>
+    		<a href="http://vgvblogs.wordpress.com/2012/06/03/tutorial-how-to-delete-flash-cookies-using-better-privacy-firefox-add-on/" class="iframe botonMediano">Tutorial</a>
+		</div>
+         
+       
+
+        
+      </div>  
+      <br /><br /><br /><br /><br />
+      
+         
+       
+        
+    </div>
+    <div id="barraInferior">
+    	<p><a style="color:#FFF" href="https://github.com/prisor/prisor">Licencia GPL v3</a></p>
+    </div>
+</body>
+</html>
+

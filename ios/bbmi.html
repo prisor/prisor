@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$(".iframe").fancybox({
+				'width'				: '85%',
+				'height'			: '85%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$(".video").click(function() {
+				$.fancybox({
+						'padding'       : 0,
+						'autoScale'     : false,
+						'transitionIn'  : 'none',
+						'transitionOut' : 'none',
+						'title'         : this.title,
+						'width'     : 680,
+						'height'        : 495,
+						'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'          : 'swf',
+						'swf'           : {
+							 'wmode'        : 'transparent',
+							'allowfullscreen'   : 'true'
+						}
+					});
+			
+				return false;
+			});			
+
+		});
+		
+	</script>
+<title>BlackBerry Messenger</title>
+</head>
+
+<body>
+	<div id="barraNavegacion">
+		 
+        <div id="logo"> <a href="../inicio.html"><img  src="../images/prisor.png" width="100" height="95" alt="logo PRISOR" /></a>
+        </div>
+        <div id="nombrePrisor">
+            <p>PRISOR</p>
+            <br />
+            <p>Privacy and Security advisOR</p>
+        </div>
+        <div id="enlaces">
+            <ul>
+                <li><a href="../inicio.html">INICIO</a></li>
+                <li><a href="../equipo.html">EQUIPO</a></li>
+                <li><a href="../contacto.html">CONTACTO</a></li>
+            </ul>
+      </div>
+    </div><!--Fin del div de barra de Navegación-->
+    <div id="container">
+   	  <p style=" font-size:60px;" class="centrar">Instala BlackBerry MSN</p>
+      <img src="http://es.blackberry.com/content/dam/blackBerry/images/campaigns/bbm-android-iphone/bbm-logo-small.png.original.png" alt="logo PRISOR" width="122" height="53" class="centrar" />
+<br /><br />
+      <p class="centrar">En España la gran mayoría de las personas que poseen un smartphone unan WhatsApp como aplicación de mensajería instantanea. Sin embargo, WhatsApp tambien es conoocido por su inseguridad, por lo que desde aquí te aconsejamos que te instales otra aplicación de mensajería instantanea como BlackBerry MSN que te ofrece una seguridad mucho mayor.
+</p>
+        
+      <div id="botones">
+      		<div>
+    		<a href="../Enhorabuena-Android.html" class="botonMediano">Siguiente paso</a>
+		</div>
+        <div>
+    		<a class="botonMediano" href="https://itunes.apple.com/es/app/bbm/id690046600?ls=1&mt=8&IID=es:bb:desktop:homepage:Dec2013:hero:download-bbm-iphone
+" target="new">Instalar</a>
+		</div>
+         <div>
+    		<a class="botonMediano iframe" href="http://demos.blackberry.com/blackberry-z10/na/us/gen/how-to/BBM/BlackBerry-Messenger/Getting-Started-with-BBM/index.html
+">Tutorial</a>
+		</div>
+           <div>
+    		<a href="http://www.youtube.com/watch?v=DVE5445LXAE" class="video botonMediano">Video</a>
+		</div>
+       
+
+        
+      </div>  
+      <br /><br /><br /><br /><br />
+      
+         
+       
+        
+    </div>
+    <div id="barraInferior">
+    	<p><a style="color:#FFF" href="https://github.com/prisor/prisor">Licencia GPL v3</a></p>
+    </div>
+</body>
+</html>
+

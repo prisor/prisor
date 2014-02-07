@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$(".iframe").fancybox({
+				'width'				: '85%',
+				'height'			: '85%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+			$(".video").click(function() {
+				$.fancybox({
+						'padding'       : 0,
+						'autoScale'     : false,
+						'transitionIn'  : 'none',
+						'transitionOut' : 'none',
+						'title'         : this.title,
+						'width'     : 680,
+						'height'        : 495,
+						'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'          : 'swf',
+						'swf'           : {
+							 'wmode'        : 'transparent',
+							'allowfullscreen'   : 'true'
+						}
+					});
+			
+				return false;
+			});			
+
+		});
+		
+	</script>
+<title>Protege la privacidad de tu android</title>
+</head>
+
+<body>
+	<div id="barraNavegacion">
+		 
+        <div id="logo"> <a href="../inicio.html"><img  src="../images/prisor.png" width="100" height="95" alt="logo PRISOR" /></a>
+        </div>
+        <div id="nombrePrisor">
+            <p>PRISOR</p>
+            <br />
+            <p>PRIvacy and Security advisOR</p>
+        </div>
+        <div id="enlaces">
+            <ul>
+                <li><a href="../inicio.html">INICIO</a></li>
+                <li><a href="../equipo.html">EQUIPO</a></li>
+                <li><a href="../contacto.html">CONTACTO</a></li>
+            </ul>
+      </div>
+    </div><!--Fin del div de barra de Navegación-->
+    <div id="container">
+   	  <p style=" font-size:60px;" class="centrar">Protege la privacidad de tu Android</p>
+     
+<br /><br />
+      <p class="centrar"> Según la RAE la privacidad se define como: "ámbito de la vida privada que se tiene derecho a proteger de cualquier intromisión" e intimidad se define como: "zona espiritual íntima y reservada de una persona o de un grupo, especialmente de una familia". Hoy en día se puede vulnerar la privacidad de una persona en Internet de múltiples formas. Una de ellas, es con una tecnología que se ha convertido en cotidiana para nosotros como es el Smartphone. Cada vez son más las aplicaciones que nos piden acceder a nuestra ubicación o nuestra agenda de contactos.
+Hasta existe un servicio de Google para Android que puede obtener el acceso a tu geolocalización, y hacer estadísticas con ella de tal forma que adivina hasta donde pasas el tiempo. Sigue el siguiente tutorial si no quieres que Google o cualquier otra aplicación "te espien":</p>
+        
+      <div id="botones">
+      		<div>
+    		<a href="avast.html" class="botonMediano">Siguiente paso</a>
+		</div>
+        
+         <div>
+    		<a class="botonMediano" href="http://www.osi.es/es/actualidad/blog/2013/10/18/las-nueve-funcionalidades-de-seguridad-que-tienes-que-utilizar-si-tienes-" target="new">Tutorial</a>
+		</div>
+        
+         
+       
+
+        
+      </div>  
+      <br /><br /><br /><br /><br />
+      
+         
+       
+        
+    </div>
+    <div id="barraInferior">
+    	<p><a style="color:#FFF" href="https://github.com/prisor/prisor">Licencia GPL v3</a></p>
+    </div>
+</body>
+</html>
+

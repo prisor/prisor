@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			$('.iframe').fancybox({
+					'width'				: '85%',
+					'height'			: '85%',
+					'autoScale'			: false,
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none',
+					'type'				: 'iframe'
+		
+			});
+			
+			$(".video").click(function() {
+				$.fancybox({
+						'padding'       : 0,
+						'autoScale'     : false,
+						'transitionIn'  : 'none',
+						'transitionOut' : 'none',
+						'title'         : this.title,
+						'width'     : 680,
+						'height'        : 495,
+						'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'          : 'swf',
+						'swf'           : {
+							 'wmode'        : 'transparent',
+							'allowfullscreen'   : 'true'
+						}
+					});
+			
+				return false;
+			});			
+
+		});
+		
+	</script>
+<title>Ghostery</title>
+</head>
+
+<body>
+	<div id="barraNavegacion">
+		 
+        <div id="logo"> <a href="../inicio.html"><img  src="../images/prisor.png" width="100" height="95" alt="logo PRISOR" /></a>
+        </div>
+        <div id="nombrePrisor">
+            <p>PRISOR</p>
+            <br />
+            <p>Privacy and Security advisOR</p>
+        </div>
+        <div id="enlaces">
+            <ul>
+                <li><a href="../inicio.html">INICIO</a></li>
+                <li><a href="../equipo.html">EQUIPO</a></li>
+                <li><a href="../contacto.html">CONTACTO</a></li>
+            </ul>
+      </div>
+    </div><!--Fin del div de barra de Navegación-->
+    <div id="container">
+   	  <p style=" font-size:60px;" class="centrar">Instala Ghostery</p>
+      <img src="https://www.ghostery.com/images/Ghostery-Logo-250px.png" alt="logo PRISOR" width="250" height="67" class="centrar" />
+      <p class="centrar">Seguro que alguna vez habrás oido hablar de las cookies. Pues bien, las cookies son fragmento de texto que crean casi todas las webs que visitamos y guardan información de la actividad que realizamos en esa misma página. Así, una tienda online podrá saber si es la primera vez que visitamos la página o no, o los productos que más visitamos. Pero la información de esta cookie solo la sabe la web donde se ha creado, es decir, la tienda online. El problema es que han surgido agencias de publicidad en páginas web que crean cookies en todos sus clientes, por lo que ya esto no se cumple. Así si visitamos, por ejemplo, una web de una agencia de viajes que tiene instalado este rastreador y luego visitamos otra página, como por ejemplo El Mundo, que tambien lo tenga instalado, es posible que en la página de "El mundo" te ofrezca anuncios relacionados con los viajes que has buscado en la página de la agencia. Ghostery es un complemento para todos los navegadores que permite bloquear a estos trackers, protegiendo tu privacidad.</p>
+        
+      <div id="botones">
+      	 <div>
+    		<a href="httpsevf.html" class="botonMediano">Siguiente paso</a>
+		</div>
+        <div>
+    		<a class="botonMediano" href="https://addons.mozilla.org/es/firefox/addon/ghostery/">Instalar</a>
+		</div>
+       
+         <div>
+    		<a href="https://www.youtube.com/watch?v=EKzyifAvC_U" class="video botonMediano">Video</a>
+		</div>
+       
+
+        
+      </div>  
+      <br /><br /><br /><br /><br />
+      
+         
+       
+        
+    </div>
+    <div id="barraInferior">
+    	<p><a style="color:#FFF" href="https://github.com/prisor/prisor">Licencia GPL v3</a></p>
+    </div>
+</body>
+</html>
